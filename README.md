@@ -2,7 +2,7 @@
 
 # Tests
 1.使用指令
-	$node everyday.js yyyy-mm-dd
+	`$node everyday.js yyyy-mm-dd`
   即可抓許當天所有預選個股的資料（預選個股存在everyday.js裡的陣列, 預設為1314 2330 2498）
   ex.	$node everyday.js 2015-10-17
 
