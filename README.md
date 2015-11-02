@@ -1,6 +1,6 @@
-## grab-stock.js
+# grab-stock.js
 
-# Tests
+## Tests
 1. 使用指令   
   `$node everyday.js yyyy-mm-dd`   
   可抓許當天所有預選個股的資料（預選個股存在everyday.js裡的陣列, 預設為1314 2330 2498）   
@@ -12,10 +12,10 @@
   檔名會記錄個股代碼及日期   
   ex.	2015-10-19_2330.json   
   
-notice:   
+## notice:   
 1. 請依照時間格式 `yyyy-mm-dd` 輸入   
 2. 若輸入的日期為週末系統會給予提示並要求輸入其他日期   
 
-# Build
+## Build
 1. npm i
 
