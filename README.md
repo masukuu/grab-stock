@@ -2,9 +2,9 @@
 
 # Tests
 1.使用指令
-	`$node everyday.js yyyy-mm-dd`
-  即可抓許當天所有預選個股的資料（預選個股存在everyday.js裡的陣列, 預設為1314 2330 2498）
-  ex.	`$node everyday.js 2015-10-17`
+	`$node everyday.js yyyy-mm-dd`   
+  即可抓許當天所有預選個股的資料（預選個股存在everyday.js裡的陣列, 預設為1314 2330 2498）   
+  ex.	`$node everyday.js 2015-10-17`    
 
 2.執行之後同一層目錄會自動產生資料夾 /res
   抓到的股票資料會依照個股代碼存放在不同資料夾
