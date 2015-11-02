@@ -28,9 +28,6 @@ function logArrayElements(element, index, array) {
 //mkdir
 function mkdir(element, index, array){
 	var dir = './res/'+element;
-	if (!fs.existsSync('./rea')){
-		fs.mkdirSync('./rea');
-	}
 	if (!fs.existsSync(dir)){
 		fs.mkdirSync(dir);
 		console.log('create dir: '+element);
@@ -86,9 +83,13 @@ function getStock(element, index, array){
   for(i = 0; i < stocks.length; i++){
     link[i] = "https://finance-yql.media.yahoo.com/v7/finance/chart/"+stocks[i]+".TW?period2="+tomorrow.format('X')+"&period1="+now.format('X')+"&interval=1m&indicators=quote&includeTimestamps=true&includePrePost=true&events=div%7Csplit%7Cearn&corsDomain=finance.yahoo.com";
     filename[i] = filenameTime+"_"+stocks[i];
-    console.log(link[i]);
+    //console.log(link[i]);
     //console.log(filename[i]);
   }
+  //make directory res
+  if (!fs.existsSync('./res')){
+		fs.mkdirSync('./res');
+	}
   //grab & save
   if(checkInput(filenameTime)){
 	if(checkWeekend(filenameTime)){
